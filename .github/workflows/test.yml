@@ -1,0 +1,16 @@
+name: test workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  clone_and_run:
+    strategy:
+      matrix:
+        os: [ "windows-2019" ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - uses: nicledomaS/cmake_build_action@v1.3
