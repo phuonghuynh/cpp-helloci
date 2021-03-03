@@ -4,7 +4,7 @@ project(cpp_hello)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_executable(main.cpp)
+add_executable(cpp_hello main.cpp)
 
 target_link_libraries(cpp_hello crypt32.lib)
 
