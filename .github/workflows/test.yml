@@ -14,3 +14,4 @@ jobs:
         with:
           submodules: true
       - uses: nicledomaS/cmake_build_action@v1.3
+      - run: cpp-helloci\build\Release\cpp_hello.exe
