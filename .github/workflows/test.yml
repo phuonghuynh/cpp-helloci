@@ -16,4 +16,4 @@ jobs:
       - uses: nicledomaS/cmake_build_action@v1.3
         with:
           config: Debug
-      - run: cpp-helloci\build\Release\cpp_hello.exe
+      - run: D:\a\cpp-helloci\cpp-helloci\build\Debug\cpp_hello.exe
